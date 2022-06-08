@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Climate change. It's Real.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an app I am working on to learn how to use Mapbox. 
+The idea for this app came while taking part of an international aid themed hackathon from General Assembly.
 
-## Available Scripts
+My team was tasked to create a climate focused app. During out ideation process we came up with the idea of an app that allows a user to show the effects of global climate change. 
 
-In the project directory, you can run:
+In the weeks that followed a few more ideas have come up and I will probably come up with a few more ideas as I begin the process of planning this app.
 
-### `npm start`
+## For not the MVP goals are: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Use of a map
+* Create markers 
+* Upload 2 photos for before and after view
+* When a marker on the map is selected have a popup display both pictures with a curtain view.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stretch goals:
 
-### `npm test`
+* Have green markers for positive change 
+* Have red markers for negative change
+* Add forum/blog like CRUD on post of pictures to have users share stories for each pic
+* Allow other users to comment on pics
+* Landing page view that shows most recent posts
+* Explore mode to allow global browsing of the map
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## (planned) Resources:
+* [Mapbox](mapbox.com) Map source.
+* [React-Map-GL](https://visgl.github.io/react-map-gl/) Makes using Mapbox GL in React applications easy.
+* [react-compare-image](https://github.com/junkboy0315/react-compare-image) Planning on using this for the direct image comparison. 
+* [AWS S3](https://aws.amazon.com/pm/serv-s3/) For photo upload.
