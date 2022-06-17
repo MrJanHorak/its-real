@@ -1,4 +1,6 @@
-
 .map-container {
-  height: 85vh;
+  top:0;
+  height: 100vh;
+  /* z-index: 0; */
   }
+

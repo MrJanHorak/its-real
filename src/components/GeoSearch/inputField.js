@@ -1,23 +1,25 @@
 import React from "react";
-import styled from "styled-components";
 import useInput from "./useInput";
+
+import '../../styles/inputField.css'
 
 const InputField = ({handleSearchResult}) => {
 
   const address = useInput("");
 
   return (
-    <Wrapper>
-      <Input
-        placeholder="Address"
+    <div id="input-wrapper">
+      <input id="search-input"
+      
+        placeholder="Search Location"
         {...address}
         isTyping={address.value !== ""}
       />
       {address.suggestions?.length > 0 && (
-        <SuggestionWrapper>
+        <div id="suggestions-wrapper">
           {address.suggestions.map((suggestion, index) => {
             return (
-              <Suggestion
+              <div id="suggestions"
                 key={index}
                 onClick={() => {
                   address.setValue(suggestion.place_name);
@@ -27,47 +29,13 @@ const InputField = ({handleSearchResult}) => {
                 }}
               >
                 {suggestion.place_name}
-              </Suggestion>
+              </div>
             );
           })}
-        </SuggestionWrapper>
+        </div>
       )}
-    </Wrapper>
+    </div>
   );
 };
 
 export default InputField;
-
-const Wrapper = styled.div`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 0 auto;
-`;
-
-const Input = styled.input`
-  width: 400px;
-  background: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  position: relative;
-  display: grid;
-  justify-self: center;
-  &:focus {
-    outline: none;
-    border-radius: ${(props) => props.isTyping && "10px 10px 0px 0px"};
-  }
-`;
-
-const SuggestionWrapper = styled.div`
-  background: white;
-  position: absolute;
-  width: 400px;
-  padding: 10px 20px;
-  border-radius: 0px 0px 10px 10px;
-`;
-
-const Suggestion = styled.p`
-  cursor: pointer;
-  max-width: 400px;
-`;
