@@ -91,6 +91,9 @@ const Landing = () => {
     console.log("from input", results)
     setLng(results[0])
     setLat(results[1])
+    new mapboxgl.Marker({color: "#FF0000"})
+  .setLngLat(results)
+  .addTo(map.current);
     map.current.flyTo ({
       center: results,
       zoom: 12,
