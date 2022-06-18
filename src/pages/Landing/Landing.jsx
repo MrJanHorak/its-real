@@ -36,7 +36,7 @@ const Landing = () => {
     console.log("from input", results);
     setLng(results[0]);
     setLat(results[1]);
-    marker.setLngLat(results).addTo(map.current);
+    marker.setLngLat(results).addTo(map.current).setPopup(new mapboxgl.Popup().setHTML(`<h1>Testing POPUP!</h1><br/><h3>${results}</h3>`))
     map.current.flyTo({
       center: results,
       zoom: 12,
