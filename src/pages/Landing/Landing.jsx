@@ -9,14 +9,11 @@ import "../../styles/Landing.css";
 
 //components
 
-import InputField from '../../components/GeoSearch/inputField.js'
+import InputField from "../../components/GeoSearch/inputField.js";
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 const Landing = () => {
-
-  const coordinates = document.getElementById('coordinates');
-
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [lng, setLng] = useState(-70.9);
@@ -33,36 +30,30 @@ const Landing = () => {
     });
   });
 
-  const marker =new mapboxgl.Marker({draggable: true, color: "#FF0000"})
+  const marker = new mapboxgl.Marker({ draggable: true, color: "#FF0000" });
 
   const handleSearchResult = (results) => {
-    console.log("from input", results)
-    setLng(results[0])
-    setLat(results[1])
-   marker
-   .setLngLat(results)
-  .addTo(map.current);
-    map.current.flyTo ({
+    console.log("from input", results);
+    setLng(results[0]);
+    setLat(results[1]);
+    marker.setLngLat(results).addTo(map.current);
+    map.current.flyTo({
       center: results,
       zoom: 12,
-      essential: true
+      essential: true,
     });
-    
-  }
+  };
 
   const handleMarkerDragend = () => {
-    console.log('in dragend')
     const lngLat = marker.getLngLat();
-    console.log(marker)
-    }
+  };
 
-    marker.on('dragend', handleMarkerDragend);
+  marker.on("dragend", handleMarkerDragend);
 
   return (
     <div>
-    <InputField  handleSearchResult={handleSearchResult}/>
-      <div ref={mapContainer} className="map-container" >
-    </div>
+      <InputField handleSearchResult={handleSearchResult} />
+      <div ref={mapContainer} className="map-container"></div>
     </div>
   );
 };
