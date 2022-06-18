@@ -19,7 +19,13 @@ const Landing = () => {
   const [lng, setLng] = useState(-70.9);
   const [lat, setLat] = useState(42.35);
   const [zoom, setZoom] = useState(9);
-
+  const marker = new mapboxgl.Marker({ draggable: true, color: "#FF0000" });
+  const nav = new mapboxgl.NavigationControl();
+  const scale = new mapboxgl.ScaleControl({
+    maxWidth: 80,
+    unit: 'imperial'
+    });
+  
   useEffect(() => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
@@ -27,10 +33,11 @@ const Landing = () => {
       style: "mapbox://styles/janhorak/cl46d05kd004j14qt7avuchry",
       center: [lng, lat],
       zoom: zoom,
-    });
+    }).addControl(nav, 'bottom-left').addControl(scale);
   });
+  
+  // map.addControl(nav, 'top-left')
 
-  const marker = new mapboxgl.Marker({ draggable: true, color: "#FF0000" });
 
   const handleSearchResult = (results) => {
     console.log("from input", results);
