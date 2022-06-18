@@ -10,7 +10,6 @@ const InputField = ({handleSearchResult}) => {
   return (
     <div id="input-wrapper">
       <input id="search-input"
-      
         placeholder="Search Location"
         {...address}
         isTyping={address.value !== ""}
