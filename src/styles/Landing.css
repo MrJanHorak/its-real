@@ -1,5 +1,11 @@
+.map-component {
+  top:10;
+  width: 480px;
+  height: 480px;
+  }
+
 .map-container {
   top:0;
-  height: 100vh;
+  height: 50vh;
   }
 
