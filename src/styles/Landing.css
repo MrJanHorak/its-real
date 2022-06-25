@@ -1,7 +1,16 @@
+.landing-main-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .map-component {
   top:10;
   width: 480px;
-  height: 480px;
+  height: 469px;
+  border-radius: 13px;
+  border: solid rgb(114, 102, 102) 4px;
   }
 
 .map-container {
