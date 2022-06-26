@@ -7,14 +7,16 @@
 
 .map-component {
   top:10;
-  width: 480px;
-  height: 469px;
+  max-width: 90vw;
+  /* max-width: 480px; */
+  height:100%;
   border-radius: 13px;
   border: solid rgb(114, 102, 102) 4px;
   }
 
 .map-container {
   top:0;
+  width:90vw;
   height: 50vh;
   }
 
