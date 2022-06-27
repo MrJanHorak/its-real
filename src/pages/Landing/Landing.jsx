@@ -5,6 +5,7 @@ import "../../styles/Landing.css";
 //components
 import Map from "../../components/Map/Map";
 import Nav from "../../components/Nav/Nav";
+import PictureElement from "../../components/PictureElement/PictureElement";
 
 const Landing = () => {
   return (
@@ -13,6 +14,7 @@ const Landing = () => {
       <div className="map-component">
         <Map />
       </div>
+        <PictureElement/>
     </div>
   );
 };
