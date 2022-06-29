@@ -12,6 +12,7 @@
     "gl-matrix": "^3.4.3",
     "mapbox-gl": "^2.8.2",
     "react": "^18.1.0",
+    "react-compare-image": "^3.1.0",
     "react-dom": "^18.1.0",
     "react-map-gl": "^7.0.15",
     "react-map-gl-geocoder": "^2.2.0",
