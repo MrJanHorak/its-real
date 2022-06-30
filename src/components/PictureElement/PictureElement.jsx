@@ -27,7 +27,7 @@ const PictureElement = () => {
             <img src={pic2} alt="pic2" />
           </div>
         }
-        aspectRatio={1/1}
+        aspectRatio={4/3}
         // orientation="vertical"
       />
       <br />
@@ -46,7 +46,7 @@ const PictureElement = () => {
             <img src={pic4} alt="pic2" />
           </div>
         }
-        aspectRatio={1/1}
+        aspectRatio={4/3}
         // orientation="vertical"
       />
       <br />
@@ -65,7 +65,7 @@ const PictureElement = () => {
             <img src={pic6} alt="pic6" />
           </div>
         }
-        aspectRatio={1/1}
+        aspectRatio={4/3}
         // orientation="vertical"
       />
       <br />

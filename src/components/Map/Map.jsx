@@ -30,9 +30,12 @@ const Map = () => {
     if (map.current) return; // initialize map only once
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/janhorak/cl46d05kd004j14qt7avuchry",
-      center: [lng, lat],
-      zoom: zoom,
+      style: "mapbox://styles/janhorak/cl50c5ppk001h14lb5kfhr44z",
+      // center: [lng, lat],
+      // zoom: zoom,
+      zoom: 1.5,
+center: [30, 50],
+projection: 'globe'
     }).addControl(nav, 'bottom-left').addControl(scale);
   });
   
