@@ -1,15 +1,15 @@
 import React from "react";
 import useInput from "./useInput";
 
-import '../../styles/inputField.css'
+import "../../styles/inputField.css";
 
-const InputField = ({handleSearchResult}) => {
-
+const InputField = ({ handleSearchResult }) => {
   const address = useInput("");
 
   return (
     <div id="input-wrapper">
-      <input id="search-input"
+      <input
+        id="search-input"
         placeholder="Search Location"
         {...address}
         isTyping={address.value !== ""}
@@ -18,13 +18,14 @@ const InputField = ({handleSearchResult}) => {
         <div id="suggestions-wrapper">
           {address.suggestions.map((suggestion, index) => {
             return (
-              <div id="suggestions"
+              <div
+                id="suggestions"
                 key={index}
                 onClick={() => {
                   address.setValue(suggestion.place_name);
                   address.setSuggestions([]);
-                  handleSearchResult(suggestion.center)
-                  console.log(suggestion.center)
+                  handleSearchResult(suggestion.center);
+                  console.log(suggestion.center);
                 }}
               >
                 {suggestion.place_name}

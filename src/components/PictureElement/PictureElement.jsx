@@ -47,7 +47,7 @@ const PictureElement = () => {
           aspectRatio={4 / 3}
         />
       </div>
-      <div className="slider-box">
+      <div className="slider-box" id="three">
         <ComparisonSlider
           defaultValue={50}
           itemOne={
@@ -60,7 +60,7 @@ const PictureElement = () => {
               <img src={pic6} alt="pic6" />
             </div>
           }
-          aspectRatio={4 / 3}
+          aspectRatio={1 / 1}
         />
       </div>
     </div>
