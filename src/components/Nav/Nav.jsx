@@ -17,10 +17,10 @@ const Nav = () => {
           <span className="mdc-tab__text-label">Home</span>
         </Tab>
         <Tab>
-          <span className="mdc-tab__text-label">Browse</span>
+          <span className="mdc-tab__text-label">Add</span>
         </Tab>
         <Tab>
-          <span className="mdc-tab__text-label">Add</span>
+          <span className="mdc-tab__text-label">Profile</span>
         </Tab>
       </TabBar>
     </div>
