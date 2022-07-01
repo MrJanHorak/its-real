@@ -1,5 +1,6 @@
 import React from "react";
 import { ComparisonSlider } from "react-comparison-slider";
+import "../../styles/PictureElement.css";
 
 //assests
 import pic1 from "../../pictures/agassiz-glacier-1913-1.jpg";
@@ -11,75 +12,56 @@ import pic6 from "../../pictures/MarmoladaDolomitesItalianAlps-2020-2.jpg";
 
 const PictureElement = () => {
   return (
-    <div>
+    <div className="comparison-view-container">
       <br />
-      <br />
-      <br />
-      <ComparisonSlider
-        defaultValue={50}
-        itemOne={
-          <div className="bg-red-200">
-            <img src={pic1} alt="pic1" />
-          </div>
-        }
-        itemTwo={
-          <div className="bg-blue-200">
-            <img src={pic2} alt="pic2" />
-          </div>
-        }
-        aspectRatio={4/3}
-        // orientation="vertical"
-      />
-      <br />
-      <br />
-      <br />
-      <br />
-      <ComparisonSlider
-        defaultValue={50}
-        itemOne={
-          <div className="bg-red-200">
-            <img src={pic3} alt="pic1" />
-          </div>
-        }
-        itemTwo={
-          <div className="bg-blue-200">
-            <img src={pic4} alt="pic2" />
-          </div>
-        }
-        aspectRatio={4/3}
-        // orientation="vertical"
-      />
-      <br />
-      <br />
-      <br />
-      <br />
-      <ComparisonSlider
-        defaultValue={50}
-        itemOne={
-          <div className="bg-red-200">
-            <img src={pic5} alt="pic5" />
-          </div>
-        }
-        itemTwo={
-          <div className="bg-blue-200">
-            <img src={pic6} alt="pic6" />
-          </div>
-        }
-        aspectRatio={4/3}
-        // orientation="vertical"
-      />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div>
-        <img src={pic1} alt="pic1" />
+      <div className="slider-box">
+        <ComparisonSlider
+          id="first"
+          defaultValue={50}
+          itemOne={
+            <div className="before-pic">
+              <img src={pic1} alt="pic1" />
+            </div>
+          }
+          itemTwo={
+            <div className="after-pic">
+              <img src={pic2} alt="pic2" />
+            </div>
+          }
+          aspectRatio={4 / 3}
+        />
       </div>
-      <br />
-      <br />
-      <br />
-      <div>
-        <img src={pic2} alt="pic2" />
+      <div className="slider-box">
+        <ComparisonSlider
+          defaultValue={50}
+          itemOne={
+            <div className="before-pic">
+              <img src={pic3} alt="pic1" />
+            </div>
+          }
+          itemTwo={
+            <div className="after-pic">
+              <img src={pic4} alt="pic2" />
+            </div>
+          }
+          aspectRatio={4 / 3}
+        />
+      </div>
+      <div className="slider-box">
+        <ComparisonSlider
+          defaultValue={50}
+          itemOne={
+            <div className="before-pic">
+              <img src={pic5} alt="pic5" />
+            </div>
+          }
+          itemTwo={
+            <div className="after-pic">
+              <img src={pic6} alt="pic6" />
+            </div>
+          }
+          aspectRatio={4 / 3}
+        />
       </div>
     </div>
   );

@@ -31,16 +31,12 @@ const Map = () => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/janhorak/cl50c5ppk001h14lb5kfhr44z",
-      // center: [lng, lat],
-      // zoom: zoom,
       zoom: 1.5,
 center: [30, 50],
 projection: 'globe'
     }).addControl(nav, 'bottom-left').addControl(scale);
   });
   
-  // map.addControl(nav, 'top-left')
-
 
   const handleSearchResult = (results) => {
     console.log("from input", results);
@@ -63,9 +59,9 @@ projection: 'globe'
   marker.on("dragend", handleMarkerDragend);
 
   return (
-    <div>
+    <div className="map-container">
       <InputField handleSearchResult={handleSearchResult} />
-      <div ref={mapContainer} className="map-container"></div>
+      <div ref={mapContainer} className="map"></div>
     </div>
   );
 };

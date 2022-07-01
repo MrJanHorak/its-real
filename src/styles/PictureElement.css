@@ -1,0 +1,33 @@
+.comparison-view-container{
+  align-items: center;
+  width: 100%;
+}
+
+.before-pic img{
+  width: 400px;
+}
+
+.after-pic img{
+  width: 400px;
+} 
+
+.c-cwwhPj{
+  height:100%;
+}
+
+.slider-box{
+  margin: 12px 0 12px 0;
+  border: 2px solid black;
+  padding: 2px;
+}
+
+/* .c-dyuglr {
+  width: 350px;
+  height: auto;
+  margin-left: 0;
+  margin-bottom: 20px;
+} */
+
+/* #first{
+  margin: 20px;
+} */

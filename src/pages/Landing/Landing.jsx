@@ -10,11 +10,13 @@ import PictureElement from "../../components/PictureElement/PictureElement";
 const Landing = () => {
   return (
     <div className="landing-main-view">
-      <Nav/>
+      <Nav />
       <div className="map-component">
         <Map />
       </div>
-        <PictureElement/>
+      <div className="picture-container">
+        <PictureElement />
+      </div>
     </div>
   );
 };
