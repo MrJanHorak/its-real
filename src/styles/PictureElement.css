@@ -5,24 +5,24 @@
 
 .before-pic img {
   width: 440px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 .after-pic img {
   width: 440px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 #three .before-pic img {
   width: 440px;
   height: 394px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 #three .after-pic img {
   width: 440px;
   height: 394px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 #three .c-cwwhPj {
@@ -30,18 +30,31 @@
 }
 
 .slider-box {
+  /* z-index: 1000; */
+  width: 440px;
   margin: 12px 0 12px 0;
-  border: 2px solid black;
-  border-radius: 12px;
-  padding: 2px;
+  border: solid rgb(140, 71, 140) 4px;
+  border-radius: 13px;
 }
+
+/* .left-icon {
+  display: float;
+  top: 4;
+  left: 4;
+}
+
+.right-icon {
+  position: absolute;
+  right: 4;
+  top: 4;
+} */
 
 #three .slider-box {
   margin: 12px 0 12px 0;
-  border: 2px solid black;
+  border: solid rgb(140, 71, 140) 4px;
   padding: 2px;
   height: 394px;
-  border-radius: 12px;
+  border-radius: 13px;
 }
 
 #three .c-dyuglr {
