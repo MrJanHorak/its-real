@@ -1,3 +1,8 @@
+body {
+  background: rgb(74,131,198);
+background: linear-gradient(90deg, rgba(74,131,198,1) 0%, rgba(221,106,106,1) 100%);
+}
+
 .landing-main-view {
   display: flex;
   flex-direction: column;
