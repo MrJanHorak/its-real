@@ -27,8 +27,11 @@ background: linear-gradient(90deg, rgba(74,131,198,1) 0%, rgba(221,106,106,1) 10
   top: 0;
   width: 440px;
   height: 50vh;
-  border-radius: 13px;
-  border: solid rgb(140, 71, 140) 4px;
+  /* border-radius: 13px; */
+  /* border: solid rgb(140, 71, 140) 4px; */
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 }
 
 .picture-container {
