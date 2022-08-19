@@ -8,7 +8,7 @@
 }
 
 #search-input {
-  width: 350px;
+  width: 300px;
   background: white;
   border: none;
   padding: 10px 20px;
@@ -27,7 +27,7 @@
 #suggestions-wrapper {
   background: white;
   position: absolute;
-  width: 350px;
+  width: 300px;
   padding: 10px 20px;
   border-radius: 0px 0px 10px 10px;
   z-index: 1;

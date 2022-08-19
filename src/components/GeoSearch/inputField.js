@@ -9,6 +9,7 @@ const InputField = ({ handleSearchResult }) => {
   return (
     <div id="input-wrapper">
       <input
+        aria-label="location search bar"
         id="search-input"
         placeholder="Search Location"
         {...address}
